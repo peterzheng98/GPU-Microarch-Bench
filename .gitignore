@@ -1,0 +1,33 @@
+# Build outputs
+dram_bank_row/dram_bank_row
+*.o
+*.obj
+*.exe
+
+# CUDA compiled intermediates
+*.cubin
+*.fatbin
+*.ptx
+*.gpu
+*.i
+*.ii
+
+# Nsight / profiler output
+*.nsys-rep
+*.ncu-rep
+*.sqlite
+*.qdrep
+
+# CSV results
+*.csv
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
