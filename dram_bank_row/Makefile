@@ -1,12 +1,13 @@
 # dram_bank_row – DRAM bank & row size discovery
 #
 # Build:
-#   make                    # Ampere (sm_80) by default
-#   make ARCH=hopper        # Hopper (sm_90)
-#   make ARCH=both          # fat binary with both architectures
+#   make                    # fat binary (sm_80 + sm_90) for multi-GPU
+#   make ARCH=ampere        # Ampere only  (sm_80)
+#   make ARCH=hopper        # Hopper only  (sm_90)
+#   make ARCH=both          # explicit fat binary
 
 NVCC       ?= nvcc
-ARCH       ?= ampere
+ARCH       ?= both
 NVCC_FLAGS := -O3 -std=c++17 -lineinfo
 
 ifeq ($(ARCH),ampere)

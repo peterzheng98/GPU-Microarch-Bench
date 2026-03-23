@@ -5,7 +5,7 @@
 #   make ARCH=both       Fat binary for Ampere + Hopper
 #   make clean           Remove all build artefacts
 
-ARCH ?= ampere
+ARCH ?= both
 
 SUBDIRS := dram_bank_row
 

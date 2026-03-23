@@ -21,6 +21,10 @@ dram_bank_row/dram_bank_row
 # CSV results
 *.csv
 
+# Log files
+*.log
+dram_bench.log
+
 # OS junk
 .DS_Store
 Thumbs.db
